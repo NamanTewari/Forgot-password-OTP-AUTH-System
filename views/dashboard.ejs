@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="dashboard-shell">
+        <header class="topbar">
+            <div class="brand-row">
+                <div class="brand-mark">D</div>
+                <div>
+                    <p class="eyebrow">Account center</p>
+                    <h1>Dashboard</h1>
+                </div>
+            </div>
+            <a class="logout-link" href="/logout">Logout</a>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="hero-panel">
+                <p class="eyebrow">Signed in</p>
+                <h1>Your account is protected and ready.</h1>
+                <p class="lead">Manage your profile, password recovery flow, and secure session from one sharp dashboard.</p>
+            </section>
+
+            <section class="dashboard-grid">
+                <article class="stat-card">
+                    <strong>JWT</strong>
+                    <span>Authentication is active through a secure HTTP-only cookie.</span>
+                </article>
+                <article class="stat-card">
+                    <strong>OTP</strong>
+                    <span>Password reset uses a six-digit one-time code with short expiry.</span>
+                </article>
+                <article class="stat-card">
+                    <strong><%= user && user.role ? user.role : "User" %></strong>
+                    <span>Your current role controls which dashboard route you can access.</span>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

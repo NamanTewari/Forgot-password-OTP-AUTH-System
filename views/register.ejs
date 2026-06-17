@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="auth-card">
+            <div class="brand-row">
+                <div class="brand-mark">A</div>
+                <div>
+                    <p class="eyebrow">Welcome</p>
+                    <h1>Create account</h1>
+                </div>
+            </div>
+            <p class="lead">Join the secure dashboard with a clean account setup.</p>
+
+            <form class="form-grid" action="/register" method="POST">
+                <div class="field">
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Create a strong password" required>
+                </div>
+                <button class="button" type="submit">Create account</button>
+            </form>
+
+            <p class="footer-note">Already registered? <a href="/login">Sign in</a></p>
+        </section>
+    </main>
+</body>
+</html>
